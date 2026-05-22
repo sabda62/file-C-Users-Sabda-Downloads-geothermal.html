@@ -1,0 +1,375 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PT Geothermal Energy Tbk</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0b111f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    header{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+      backdrop-filter:blur(12px);
+      background:rgba(10,15,25,0.7);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#e0e7e5;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      margin-left:30px;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      color:#0f0f0f;
+    }
+
+    .hero{
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 8%;
+      background:
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero-text{
+      max-width:650px;
+    }
+
+    .hero-text h1{
+      font-size:70px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero-text span{
+      color:#979998;
+    }
+
+    .hero-text p{
+      color:#c7d2e0;
+      line-height:1.8;
+      font-size:18px;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 38px;
+      background:#d4dad7;
+      color:#081018;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:600;
+      transition:0.3s;
+      box-shadow:0 0 20px rgba(0,255,157,0.4);
+    }
+
+    .btn:hover{
+      transform:translateY(-4px);
+      box-shadow:0 0 30px rgba(0,255,157,0.7);
+    }
+
+    section{
+      padding:100px 8%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .title h2{
+      font-size:42px;
+      color:#00ff9d;
+      margin-bottom:10px;
+    }
+
+    .title p{
+      color:#9aa8bd;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:25px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.5);
+    }
+
+    .about-text h3{
+      font-size:35px;
+      margin-bottom:20px;
+    }
+
+    .about-text p{
+      color:#b8c4d6;
+      line-height:1.9;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#131c2f;
+      padding:35px;
+      border-radius:25px;
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#00ff9d;
+      box-shadow:0 0 25px rgba(0,255,157,0.15);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#00ff9d;
+    }
+
+    .card p{
+      color:#b9c3d5;
+      line-height:1.7;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      text-align:center;
+    }
+
+    .stat-box{
+      background:#131c2f;
+      padding:40px;
+      border-radius:25px;
+    }
+
+    .stat-box h1{
+      color:#00ff9d;
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    footer{
+      padding:30px;
+      text-align:center;
+      background:#070d18;
+      color:#9aa8bd;
+      border-top:1px solid rgba(255,255,255,0.05);
+    }
+
+    @media(max-width:900px){
+
+      .hero{
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:48px;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+      nav{
+        display:none;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">PGE Tbk</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>
+        Future of <span>Green Energy</span>
+      </h1>
+
+      <p>
+        PT Geothermal Energy Tbk adalah perusahaan energi panas bumi
+        modern yang berfokus pada pengembangan energi terbarukan
+        berkelanjutan untuk masa depan Indonesia.
+      </p>
+
+      <a href="#" class="btn">Explore More</a>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="title">
+      <h2>Tentang Kami</h2>
+      <p>Leading Renewable Energy Company</p>
+    </div>
+
+    <div class="about">
+
+      <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200">
+
+      <div class="about-text">
+
+        <h3>Energi Bersih Masa Depan</h3>
+
+        <p>
+          Kami berkomitmen menghadirkan energi panas bumi yang ramah lingkungan,
+          efisien, dan berkelanjutan untuk mendukung transisi energi nasional.
+        </p>
+
+        <br>
+
+        <p>
+          Dengan teknologi modern dan inovasi berkelanjutan,
+          perusahaan terus memperluas pengembangan geothermal
+          di berbagai wilayah Indonesia.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="title">
+      <h2>Layanan Kami</h2>
+      <p>Our Main Services</p>
+    </div>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>Geothermal Exploration</h3>
+        <p>
+          Eksplorasi sumber panas bumi dengan teknologi modern.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Power Plant</h3>
+        <p>
+          Produksi listrik energi terbarukan yang stabil dan efisien.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sustainability</h3>
+        <p>
+          Mendukung net zero emission dan energi hijau Indonesia.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <div class="title">
+      <h2>Company Statistics</h2>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat-box">
+        <h1>672 MW</h1>
+        <p>Total Capacity</p>
+      </div>
+
+      <div class="stat-box">
+        <h1>15+</h1>
+        <p>Operational Areas</p>
+      </div>
+
+      <div class="stat-box">
+        <h1>100%</h1>
+        <p>Renewable Energy</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 PT Geothermal Energy Tbk — Green Energy For Better Future
+  </footer>
+
+</body>
+</html>
+```
